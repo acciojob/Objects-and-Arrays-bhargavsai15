@@ -6,14 +6,15 @@ const person = {
 };
 
 // Write your code here, make sure the name of variables is exactly same as mentioned in the problem statement
-let team=players;
-let team1=[];
-for(let i=0;i<players.length;i++){
-	team1[i]=players[i];
-}
-let cap1= {
-    ...person
-}; 
+
+// create a reference to the players array
+const team = players;
+
+// create a copy of the players array
+const team1 = players.slice();
+
+// create a copy of the person object
+const cap1 = {...person};
 window.person = person;
 window.team = team;
 window.team1 = team1;
