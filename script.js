@@ -11,7 +11,7 @@ const person = {
 const team = players;
 
 // create a copy of the players array
-const team1 = players.slice();
+const team1 = [...players];
 
 // create a copy of the person object
 const cap1 = {...person};
