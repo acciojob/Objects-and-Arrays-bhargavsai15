@@ -1,4 +1,4 @@
-const players = ["John", "Bob", "Alice", "Poppy"];
+const players = ["John", "Bob", "Alice", "Dhoni"];
 
 const person = {
   name: "John Doe",
@@ -15,7 +15,8 @@ const team1 = [...players];
 
 // create a copy of the person object
 const cap1 = {...person};
-window.person = person;
+
+window.person = players;
 window.team = team;
 window.team1 = team1;
 window.cap1 = cap1;
