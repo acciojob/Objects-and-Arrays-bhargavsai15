@@ -1,4 +1,4 @@
-const players = ["John", "Bob", "Alice", "Dhoni"];
+const players = ["John", "Bob", "Alice", "Poppy"];
 
 const person = {
   name: "John Doe",
@@ -11,12 +11,12 @@ const person = {
 const team = players;
 
 // create a copy of the players array
-const team1 = [...players];
+const team1 = players.slice();
 
 // create a copy of the person object
 const cap1 = {...person};
-
-window.person = players;
+window.person = person;
+window.players=team;
 window.team = team;
 window.team1 = team1;
 window.cap1 = cap1;
